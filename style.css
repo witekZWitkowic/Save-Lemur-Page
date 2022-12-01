@@ -1,0 +1,604 @@
+html{
+    font-family: 'Righteous', cursive;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* ---------- BACKGROUND PICTURES ------------ */
+.page-background{
+    height: 80vh;
+    clip-path: polygon(0 0,100% 0,100% 55vh,0 100%);
+}
+
+.page-background-image{
+    background-size: cover;
+    width: 100%;
+    background-image: linear-gradient(to right bottom,rgba(59, 59, 59, 0.8),rgba(143, 146, 145, 0.7)),
+    url('https://image.pbs.org/video-assets/gLNfkpr-asset-mezzanine-16x9-8Fx5Aoe.jpg');
+    background-attachment: fixed;
+}
+.page-background-main{
+    height: 80vh;
+    clip-path: polygon(0 0,100% 10vh,100% 70vh,0 100%);
+}
+.page-background-image-main{
+    background-size: cover;
+    width: 100%;
+    background-image: linear-gradient(to right bottom,rgba(59, 59, 59, 0.8),rgba(143, 146, 145, 0.767)),
+    url('https://www.naturalworldsafaris.com/media/5475/madagascar-robin-hoskyns-black-and-white-ruffed-lemur-jumping-endangered-spaceonright.jpg');
+    background-attachment: fixed;
+}
+/* ------ NAVBAR ------ */
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11000;
+}
+.navbar-logo{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ 
+}
+.navbar-logo-written{
+    font-size: 2rem;
+    margin-left: 10px;
+    color: #FFF;
+}
+.navbar-logo-image{
+    transform: scale(.6);
+}
+.navbar-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 50px;
+}
+.navbar-menu-element{
+    margin: 0 20px;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.7s;
+}
+.navbar-donate-button{
+    height: 30px;
+    width: 100px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: #2B2D42;
+    transition: all 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.navbar-donate-button:hover {
+    background-color:#8D99AE;
+    color: #2B2D42;
+    transform: scale(1.08);
+    transition: all 0.7s;
+}
+.navbar-menu-element:hover{
+    color: #e1ff00;
+    transition: all 0.7s;
+}
+.navbar-menu-element-donate{
+    margin: 0 20px;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.7s;
+}
+.navbar-donate-button:hover{
+    color: #2B2D42;
+    transition: all 0.7s;
+}
+
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #00000066;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: none;
+    cursor: pointer;
+}
+.search-btn:active{
+    transform: scale(0.9);
+}
+.search-btn-img{
+    transform: scale(0.8);
+}
+.search-btn-img:hover{
+    transform: scale(0.85);
+}
+.search-bar{
+    height: 25px;
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 40px;
+    width: 190px;
+    border-radius: 5px;
+    border: none;
+    transition: all .5s;
+}
+.search-bar:focus{
+    outline: none;
+    height: 35px;
+    width: 230px;
+    transition: all .5s;
+}
+/* -------- HAMBURGER --------- */
+
+.hamburger-menu{
+    display: none;
+    z-index: 99990999;
+}
+.hamburger-menu-element{
+    z-index: 99990999;
+    width: 100px;
+    height: 20px;
+    background-color:#FFF;
+}
+/* -------- DESCRIPTION SECTION -------- */
+.description{
+    margin: 180px 0 0 100px;
+}
+.description-para {
+    color: #FFF;
+    font-size: 4.5rem;
+    margin:10px;
+}
+.description-para-word{
+    color: #e1ff00;
+}
+#donate {
+    scroll-margin-top: 200px;
+}
+
+/* ----------- ORGANISATION INFO --------- */
+.organisation-surprise{
+    text-decoration: none;
+}
+.organisation-info-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.organisation-fund-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    color: #FFF;
+    background-color: #2B2D42;
+    transition: all .8s;
+}
+.organisation-fund-info:hover{
+    transform: scale(1.1);
+    transition: all .8s;
+}
+.fund-donate {
+    font-size: 2rem;
+    margin: 10px;
+}
+.fund-description{
+    text-align: center;
+    max-width: 250px;
+}
+.organisation-work-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    color: #FFF;
+    background-color: #8D99AE;
+    transition: all .8s;
+}
+.organisation-work-info:hover{
+    transform: scale(1.1);
+    transition: all .8s;
+}
+.work-info {
+    font-size: 2rem;
+    margin: 10px;
+}
+.work-description{
+    text-align: center;
+    max-width: 250px;
+}
+
+/* -------- VALUE DESCRIPTION --------- */
+li {
+    font-size: 1.5rem;
+    list-style: none;
+    transition: all 0.7s;
+}
+li:hover{
+    color: #e1ff00;
+    transition: all 0.7s;
+}
+.lemur-head-listing{
+    background: url('images/lemur-listing.png') no-repeat left;
+    padding-left: 25px;
+}
+.list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+.value-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.value-description {
+    color: #FFF;
+    transition: all 1s;
+}
+.value-description:hover{
+    transform: scale(1.5);
+    transition: all 1s;
+}
+.value-description-title{
+    text-align: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* --------------- EVENTS ------------ */
+.events-list-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.event{
+    max-width: 600px;
+}
+.events-list-title{
+    text-align: center;
+    font-size: 4rem;
+    color:#2B2D42;
+}
+.event-title{
+    text-align: center;
+    margin: 10px;
+    font-size: 2.5rem;
+    color: #8D99AE;
+}
+.event-description{
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+.event-date{
+    margin: 0;
+    text-align: right;
+    font-size: 1.05rem;
+    color:#3d4275;
+}
+#events {
+    scroll-margin-top: 100px;
+}
+/* -------------------- NEWSLETTER --------------------- */
+
+.newsletter-section {
+    margin-top: 70px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px #96949444;
+  }
+  
+  .newsletter-heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #2B2D42;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+  
+  .newsletter-submit-container {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid #2B2D42;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .newsletter-submit-container:hover {
+    background-color: #2B2D42;
+  }
+  .newsletter-submit-container:hover img {
+    filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(212deg) brightness(104%) contrast(104%);
+  }
+  .newsletter-submit-container:hover .newsletter-submit-btn {
+    color: #FFFFFF;
+    margin-right: 25px;
+  }
+  
+  .newsletter-submit-btn {
+    margin: 0 17px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2B2D42;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+  }
+  
+  .newsletter-submit-img {
+    margin-right: 25px;
+  }
+
+  /* ---------------- FOOTER -------------- */
+  .footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #2B2D42;
+  }
+  .footer-logo-and-name{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .footer-logo-name{
+    font-size: 1.5rem;
+    margin: 0 0 0 20px;
+    color:#e1ff00;
+  }
+  .footer-logo{
+    margin-left: 20px;
+  }
+  .footer-date-rights{
+    color:#e1ff00;
+    margin-right: 10px;
+    font-size: .7rem;
+  }
+
+
+  /* ------------ MEDIA QUERIES -------------- */
+
+  @media only screen and (max-width: 480px) {
+    .page-background{
+        height: 50vh;
+        clip-path: polygon(0 0,100% 0,100% 40vh,0 100%);
+    }
+    .page-background-image{
+        width: 100%;
+        background-image: linear-gradient(to right bottom,rgba(59, 59, 59, 0.8),rgba(143, 146, 145, 0.7)),
+        url('https://image.pbs.org/video-assets/gLNfkpr-asset-mezzanine-16x9-8Fx5Aoe.jpg');
+    }
+    .page-background-main{
+        height: 80vh;
+        clip-path: polygon(0 0,100% 10vh,100% 72vh,0 100%);
+    }
+    .navbar-wrapper{
+        display: none;
+    }
+    .navbar-logo-written{
+        font-size: 1.2rem;
+        margin-left: -20px;
+        margin-top: -20px;
+        color: #FFF;
+    }
+    .navbar-logo-image{
+        transform: scale(.3);
+        margin-left: -20px;
+        margin-top: -20px;
+    }
+    .hamburger-menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hamburger-menu-element{
+        border-radius: 4px;
+        width: 40px;
+        height: 5px;
+        margin: 3px 0;
+        background-color:#2B2D42;
+    }
+
+    /* -------- DESCRIPTION SECTION -------- */
+    .description{
+        margin: 50px 0 0 0;
+    }
+    .description-para {
+        color: #FFF;
+        font-size: 2.1rem;
+        margin:10px;
+    }
+    .description-para-word{
+        color: #e1ff00;
+    }
+    /* ----------- ORGANISATION INFO --------- */
+    .organisation-info-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .organisation-fund-info{
+        width: 330px;
+        height: 330px;
+        margin:30px 0;
+    }
+    .organisation-fund-info:hover{
+        transform: scale(1.1);
+    }
+    .organisation-work-info{
+        width: 330px;
+        height: 330px;
+        
+    }
+    .organisation-work-info:hover{
+        transform: scale(1.1);
+    }
+    .work-description{
+        text-align: center;
+        max-width: 250px;
+    }
+    /* -------- VALUE DESCRIPTION --------- */
+    li {
+        font-size: 1.2rem;
+    }
+    .value-section {
+        flex-direction: column;
+    }
+    .value-description-title{
+        font-size: 1.8rem;
+    }
+    .value-description:hover{
+        transform: scale(1.1);
+        transition: all 1s;
+    }
+    /* --------------- EVENTS ------------ */
+    .events-list-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .events-list-title{
+        text-align: center;
+        font-size: 2rem;
+        color:#2B2D42;
+
+    }
+    .event-title{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2rem;
+        color: #8D99AE;
+    }
+    .event-description{
+        margin-right: 0;
+        margin: 0 !important;
+        text-align: center;
+    }
+    .event-date{
+        margin: 0 10px 5px 10px;
+        font-size: 1.0rem
+    }
+
+    /* -------------------- NEWSLETTER --------------------- */
+
+    .newsletter-heading {
+        font-size: 2rem;
+    }
+  
+    /* ---------------- FOOTER -------------- */
+    .footer-logo-name{
+        font-size: 1rem;
+        margin-left: 5px;
+    }
+    .footer-logo{
+        transform: scale(.6);
+        margin-left: 5px;
+    }
+    .footer-date-rights{
+        margin-right: 5px;
+        font-size: .5rem;
+    }
+  }
+
+  /* ------------- LOADING CIRCLE -------------- */
+
+  .loading_window {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: grid;
+    place-items: center;
+    opacity: 1;
+    transition: opacity ease-out 1.5s;
+    z-index: 1000;
+  }
+  
+  .loading_window-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: circle 2s linear infinite;
+  }
+  .loading_window-circle:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #222222;
+  }
+  
+  .loading_window-sign {
+    color: #434343;
+    font-size: 18px;
+    animation: text 2s ease-in-out infinite;
+  }
+  
+  @-webkit-keyframes circle {
+    0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #dcdc10;
+    }
+    50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+    }
+    100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #d1921c;
+    }
+  }
+  
+  @keyframes circle {
+    0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #dcdc10;
+    }
+    50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+    }
+    100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #d1921c;
+    }
+  }
+  @-webkit-keyframes text {
+    50% {
+      color: #111111;
+    }
+  }
+  @keyframes text {
+    50% {
+      color: #111111;
+    }
+  }
